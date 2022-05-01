@@ -53,7 +53,7 @@ function makeGrid() {
 
     var rowWidth = getPickedSize.inputWidth.value;
     var rowHeight = getPickedSize.inputHeight.value;
-    var boxColor = getPickedColor.value;
+    // var boxColor = getPickedColor.value;
 
     for (let i = 0; i < rowHeight; i++) {
         var row = getPixelCanvas.insertRow(i);
@@ -71,7 +71,7 @@ function makeGrid() {
         }
     }
     function getval(cell) {
-        cell.style.backgroundColor = boxColor;
+        cell.style.backgroundColor = getPickedColor.value;
     }
 
 };
